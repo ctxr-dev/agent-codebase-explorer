@@ -1,0 +1,46 @@
+{
+  "name": "@ctxr/agent-codebase-explorer",
+  "version": "1.0.0",
+  "description": "Read-only codebase search subagent: locates files, symbols, and patterns and answers where-is-X / what-references-Y with a capped report. Scoped to Read/Grep/Glob/Bash so it carries no MCP connector schema and stays immune to subagent-init failures.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctxr-dev/agent-codebase-explorer.git"
+  },
+  "homepage": "https://github.com/ctxr-dev/agent-codebase-explorer#readme",
+  "bugs": {
+    "url": "https://github.com/ctxr-dev/agent-codebase-explorer/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "ctxr-agent-codebase-explorer.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "ctxr": {
+    "type": "agent",
+    "target": "file"
+  },
+  "keywords": [
+    "agent-skills",
+    "agents-md",
+    "codex",
+    "claude-code",
+    "ctxr",
+    "agent",
+    "ai"
+  ],
+  "scripts": {
+    "validate": "npx @ctxr/kit validate",
+    "lint": "markdownlint-cli2 '**/*.md' '#node_modules'",
+    "lint:fix": "markdownlint-cli2 --fix '**/*.md' '#node_modules'",
+    "prepare": "husky || true"
+  },
+  "devDependencies": {
+    "husky": "^9.1.0",
+    "markdownlint-cli2": "^0.14.0"
+  }
+}
