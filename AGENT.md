@@ -27,7 +27,7 @@ Return 500 words or fewer, in exactly these sections:
 
 - **Found**: the answer, every claim backed by an exact `path:line` reference.
 - **Ruled out**: places you checked that did NOT hold the answer (this saves the orchestrator a repeat search).
-- **Open questions**: anything the brief could not resolve, each with the assumption you made.
+- **Open questions**: anything the brief could not resolve (each with the assumption you made), plus a one-line note for any capability that was unavailable.
 
 No raw tool dumps, no command transcripts, no step-by-step narration of your search.
 
