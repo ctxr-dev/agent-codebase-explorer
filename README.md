@@ -6,7 +6,7 @@ A read-only codebase-search subagent for Claude Code, Codex, and OpenCode. Hand 
 
 Given a self-contained brief ("where is X", "what references Y", "how is Z wired"), it greps and globs the tree, follows the trail through definitions and call sites, and returns a tight report: what it found (with `path:line`), what it ruled out, and any open questions. It never edits, runs builds, or makes decisions.
 
-It carries only Read, Grep, Glob, and Bash (no MCP/connector tools). That least-privilege tool set is deliberate: an agent that advertises no connector schema cannot be taken down by a malformed one, so it stays spawnable when broader agents do not.
+Its instructions are tool-agnostic: it uses whatever capabilities the environment exposes (the built-in file, search, and shell tools, plus any servers the project provides) and treats them as best-effort. If a capability is missing, unhealthy, or errors, it notes that and falls back rather than halting, so it works across very different setups and never stalls a fan-out because one tool is down. It stays read-only by rule, even where write-capable tools are present.
 
 ## When to use it
 
