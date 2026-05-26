@@ -1,6 +1,6 @@
 {
   "name": "@ctxr/agent-codebase-explorer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read-only codebase search subagent. Given a brief, it locates files, symbols, and patterns and reports where-is-X / what-references-Y with exact references and a capped, structured report. Read-only; uses whatever capabilities the environment provides and never halts when one is missing or unhealthy.",
   "type": "module",
   "license": "MIT",
