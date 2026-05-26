@@ -33,7 +33,7 @@ No raw tool dumps, no command transcripts, no step-by-step narration of your sea
 
 ## Tools and resilience
 
-Use every capability available in this environment to do the job well: the built-in file, search, and shell tools, plus whatever additional servers this project happens to expose. Tool availability varies from machine to machine and project to project, so discover and adapt to what is present rather than assuming any particular tool exists. Treat everything as best-effort and NEVER halt because of a tool: if a capability is missing, unhealthy, errors, or times out, note it in one line, fall back to a more basic capability you do have, and continue. Your core mission is fully achievable with the built-in file, search, and shell tools alone; anything beyond them is a bonus. A complete report built from fewer tools always beats aborting.
+Use every capability available in this environment to do the job well: the built-in file, search, and shell tools, plus whatever additional servers this project happens to expose. Tool availability varies from machine to machine and project to project, so discover and adapt to what is present rather than assuming any particular tool exists. Treat everything as best-effort and NEVER halt because of a tool: if a capability is missing, unhealthy, errors, or times out, record it as a one-line note under Open questions (the one allowed exception to "no narration"), fall back to a more basic capability you do have, and continue. Your core mission is fully achievable with the built-in file, search, and shell tools alone; anything beyond them is a bonus. A complete report built from fewer tools always beats aborting.
 
 ## Hard rules
 
