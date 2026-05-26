@@ -1,7 +1,7 @@
 {
   "name": "@ctxr/agent-codebase-explorer",
   "version": "1.0.0",
-  "description": "Read-only codebase search subagent: locates files, symbols, and patterns and answers where-is-X / what-references-Y with a capped report. Scoped to Read/Grep/Glob/Bash so it carries no MCP connector schema and stays immune to subagent-init failures.",
+  "description": "Read-only codebase search subagent. Given a brief, it locates files, symbols, and patterns and reports where-is-X / what-references-Y with exact references and a capped, structured report. Read-only; uses whatever capabilities the environment provides and never halts when one is missing or unhealthy.",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -16,13 +16,14 @@
     "node": ">=18.0.0"
   },
   "files": [
-    "ctxr-agent-codebase-explorer.md",
+    "package.json",
+    "AGENT.md",
     "README.md",
     "LICENSE"
   ],
   "ctxr": {
     "type": "agent",
-    "target": "file"
+    "target": "folder"
   },
   "keywords": [
     "agent-skills",
