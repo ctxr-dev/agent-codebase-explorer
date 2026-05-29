@@ -15,7 +15,7 @@ During the exploration phase of planning, or whenever the main agent needs to lo
 ## Install
 
 ```bash
-npx @ctxr/kit install @ctxr/agent-codebase-explorer
+npx @ctxr/kit@latest install @ctxr/agent-codebase-explorer
 ```
 
 `@ctxr/kit` installs the bundle and mirrors it into the host's agent directory; the agent then appears as `agent-codebase-explorer`.
